@@ -1,0 +1,25 @@
+{
+  "name": "castle",
+  "version": "1.0.0",
+  "description": "WP Web Apliccation | Listing hotels&restaurants",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "promise": "^8.0.2",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CA-LAMINE/castle.git"
+  },
+  "author": "Charles-Adrien LAMINE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CA-LAMINE/castle/issues"
+  },
+  "homepage": "https://github.com/CA-LAMINE/castle#readme"
+}

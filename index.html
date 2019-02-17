@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Relais&Chateaux</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+    <script>
+      $(function() {
+        $('#buttonJson').on('click', function(){
+        $.getJSON("Selection.json", function(result){
+         $.each(result, function(i, field){
+         $("body").append('Hotel : ' + field.hotelName + '<br>');
+         $("body").append('Restaurant : ' + field.restaurantName + '<br>');
+         $("body").append('Chef : ' + field.chef + '<br>');
+         $("body").append('Postal Code : ' + field.postalCode + '<br>');
+         $("body").append('Price : ' + field.price + '<br>');
+         $("body").append('URL : ' + field.url + '<br>' + '<br>');
+         });
+        });
+      });
+      });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1 style="color:#FF0000">Best selection of hotels and prices</h1>
+    </div>
+        <h5>Click to load the selection</h5>
+        <button id="buttonJson">Push me</button>
+        <br> <br>
+
+
+   
+       
+
+    
+
+
+</body>
+</html>
